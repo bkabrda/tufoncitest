@@ -1,0 +1,67 @@
+{
+ "signatures": [
+  {
+   "keyid": "8b31737b6efc165c4f39a1ee9dc3230782d79a6c08597a58e7446d5835e35ab4",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2025-06-25T08:22:41Z",
+  "keys": {
+   "278b3e536235d4e9f5ddbdafd8bd87c8d9116715fc7cab0fa47b18609d59cb69": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/bkabrda/tufoncitest/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   },
+   "8b31737b6efc165c4f39a1ee9dc3230782d79a6c08597a58e7446d5835e35ab4": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "bkabrda@redhat.com",
+     "issuer": "https://github.com/login/oauth"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-keyowner": "@bkabrda"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "8b31737b6efc165c4f39a1ee9dc3230782d79a6c08597a58e7446d5835e35ab4"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "278b3e536235d4e9f5ddbdafd8bd87c8d9116715fc7cab0fa47b18609d59cb69"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "8b31737b6efc165c4f39a1ee9dc3230782d79a6c08597a58e7446d5835e35ab4"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "278b3e536235d4e9f5ddbdafd8bd87c8d9116715fc7cab0fa47b18609d59cb69"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
